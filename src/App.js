@@ -7,8 +7,9 @@ function App() {
   const [origin, setOrigin] = useState("");
   const [dest, setDest] = useState("");
   const [URL, setURL] = useState(
-    "https://www.google.com/maps/embed/v1/directions?key=AIzaSyBOZnc8KJAxyQVLkyGRGci7vpfXHXukuXE + &origin=Queens + NYC + &destination=Bay ridge + New York City + &avoid=tolls|highways"
+    "https://www.google.com/maps/embed/v1/directions?key=AIzaSyBOZnc8KJAxyQVLkyGRGci7vpfXHXukuXE  + &origin=Queens + NYC + &destination=Bay ridge + New York City + &avoid=tolls|highways"
   );
+  console.log(process.env.REACT_APP_KEY);
 
   const handleSubmit = () => {
     if (dest && origin) {
