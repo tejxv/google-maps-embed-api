@@ -25,22 +25,25 @@ function App() {
           <img src={graviti} className="logo" alt="logo" />
         </div>
         <div className="titleContainer">
-          <p className="title">Let's calculate distance from Google maps</p>
+          <p className="title">Let's calculate distance using Google maps</p>
         </div>
         <div className="inputFieldContainer">
           <div className="origin">
-            <label> Origin</label>
+            <label className="textfieldLabel"> Origin</label>
             <input type="text" onChange={(e) => setOrigin(e.target.value)} />
           </div>
           <div className="origin">
-            <label> Destination</label>
+            <label className="textfieldLabel"> Destination</label>
             <input type="text" onChange={(e) => setDest(e.target.value)} />
           </div>
+          <div className="origin">
+            <button type="button" className="CTA" onClick={handleSubmit}>
+              {" "}
+              Calculate
+            </button>
+          </div>
         </div>
-        <button type="button" className="CTA" onClick={handleSubmit}>
-          {" "}
-          Calculate
-        </button>
+
         <div className="mapContainer">
           <iframe
             width="650"
