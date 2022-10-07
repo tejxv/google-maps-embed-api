@@ -22,7 +22,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="nav">
-          <img src={graviti} className="logo" alt="logo" />
         </div>
         <div className="titleContainer">
           <p className="title">Let's calculate distance using Google maps</p>
